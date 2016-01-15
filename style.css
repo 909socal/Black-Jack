@@ -5,12 +5,16 @@ h1, h2, h3{
 
 .player{
 	text-align: left;
-	padding-top: 30px;
 }
 
 #pDisplay{
 	text-align: left;
 }
+#cDisplay{
+	text-align: right;
+	
+}
+
 
 h3{
 	text-align: right;

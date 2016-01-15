@@ -7,37 +7,34 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <div class="container">
-    <div class="container">
    <h1 class = "header" >BlackJACK !!</h1>
 
-    <div id="actionDiv">
-      <button id="stand" class="btn btn-primary pull-right">Stand</button>
-      <button id="hitMe" class="btn btn-danger pull-right">Hit Me !! </button>
-      <button id = 'deal' class="btn btn-success pull-right">Deal</button>
-
+   <div class = 'col-md-12'>
+     <div class='row'>
+      <div  class='col-md-12'>
+        <h3 class="player col-md-6">Players Cards</h3>
+        <h3 class="dealer col-md-6">Dealers Cards</h3>
+        <h3 id="pDisplay" class = 'col-md-6'></h3>
+        <h3 id="cDisplay" class = 'col-md-6'></h3>
+      </div>
     </div>
-
-   <div id="playerHand">
-     <h3 class="player">Players Cards</h3>
-     <h3 id="pDisplay"></h3>
+     <br>
+    <div class='row'>
+     <div id="actionDiv" class ='col-md-12'>
+       <button id="stand" class="btn btn-primary pull-right">Stand</button>
+       <button id="hitMe" class="btn btn-danger pull-right">Hit Me !! </button>
+       <button id = 'deal' class="btn btn-success pull-right">Deal</button>      
+     </div>
    </div>
-
-   <div id="dealerHand">
-      <h3 class="dealer">Dealers Cards</h3>
-      <h3 id="cDisplay"></h3>
+   <div class="row">
+    <div id="currentScoreDiv">
+     <h2 class ="pscore"></h2>
+     <h2 class = 'cscore'></h2>
    </div>
+ </div>
 
-
-   <div id="currentScoreDiv">
-     <h2 class ="pscore"> 
-      </h1>
-     <h2 class = 'cscore'>
-     </h2>
-   </div>
-
-  </div>
+</div>
 
 </body>
 </html>

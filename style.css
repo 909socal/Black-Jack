@@ -1,0 +1,47 @@
+h1, h2, h3{
+	text-align: center;
+	color: white;
+}
+
+.player{
+	text-align: left;
+	padding-top: 30px;
+}
+
+#pDisplay{
+	text-align: left;
+}
+
+h3{
+	text-align: right;
+}
+
+body{
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://www.videoslots.com/file_uploads/backgrounds/Blackjack_background.jpg');
+}
+
+#hitMe{
+
+	font-size: 20px;
+	background-color: black;
+ 	
+}
+
+
+
+#stand{
+	font-size: 20px;
+	background-color: black;
+	margin-left: 5px;
+}
+#car{
+	font-size: 30px;
+	color: white;
+
+}
+#deal{
+	font-size: 20px;
+	background-color: black;
+    margin-right: 5px;
+
+}

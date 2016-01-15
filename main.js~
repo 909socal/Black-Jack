@@ -1,0 +1,39 @@
+'use strict'
+
+$(document).ready(init);
+
+var sum = 0;
+var stockArray = ["A-Hearts", "A-Dimond", "A-Hearts", "A-Spade", "2-Hearts", "2-Dimond", "2-Hearts", "2-Spade", "3-Hearts", "3-Dimond", "3-Hearts", "3-Spade", "4-Hearts", "4-Dimond", "4-Hearts", "4-Spade", "5-Hearts", "5-Dimond", "5-Hearts", "5-Spade", "6-Hearts", "6-Dimond", "6-Hearts", "6-Spade", "7-Hearts", "7-Dimond", "7-Hearts", "7-Spade", "8-Hearts", "8-Dimond", "8-Hearts", "8-Spade", "9-Hearts", "9-Dimond", "9-Hearts", "9-Spade", "10-Hearts", "10-Dimond", "10-Hearts", "10-Spade", "J-Hearts", "J-Dimond", "J-Hearts", "J-Spade", "Q-Hearts", "Q-Dimond", "Q-Hearts", "Q-Spade", "K-Hearts", "K-Dimond", "K-Hearts", "K-Spade"]
+var modifiedArray = _.shuffle(stockArray);
+var playerDeck = [];
+
+function init(){
+  $('#deal').on('click' , dealMe);
+  $('#hitMe').on('click' , hitMe);
+
+  // $('#deal').on('click' , clickHist);
+ }
+
+function dealMe(event){
+
+  for(var i = 0; i < 2; i++){
+      var cardDraw = Math.floor(Math.random() * modifiedArray.length);
+      playerDeck.push(modifiedArray.splice(cardDraw, 1));
+    }
+    console.log(playerDeck)
+    return playerDeck;
+
+}
+
+function hitMe(){
+  for(var i = 0; i < 1; i++){
+      var cardDraw = Math.floor(Math.random() * modifiedArray.length);
+      playerDeck.push(modifiedArray.splice(cardDraw, 1));
+    }
+    console.log(playerDeck)
+  return playerDeck;
+}
+
+
+
+

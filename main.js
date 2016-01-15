@@ -138,8 +138,8 @@ function standMe(){
   
   console.log("OMG!! COMP ADD:", newCompTotal);
   if (cace){
-     if (pTotal> 21){
-      pTotal = pTotal - 11;
+     if (cTotal> 21){
+      cTotal = cTotal - 11;
      }
   }
   if(newCompTotal>21){
